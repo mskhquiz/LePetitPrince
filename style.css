@@ -1,0 +1,120 @@
+*{
+    transition: 0.5s;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    text-align: center;
+    padding: 14% 2%;
+    background-image: url("head.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    filter: grayscale(30%);
+}
+header h1, h2{
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+}
+header a{
+    font-size: 30px;
+    color: white;
+    background: none;
+    padding: 1% 4.5%;
+    margin: 3%;
+    display: inline-block;
+    border: solid 2px white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-shadow: 1px 1px 10px black;
+    shadow: 1px 1px 10px black;
+    position: relative;
+}
+header a::before{
+  left: 10%;
+  content: '>';
+  animation: bounce ease 1s infinite;
+  transform: rotate(90deg);
+  position: absolute;
+}
+header a::after{
+  right: 10%;
+  content: '>';
+  animation: bounce ease 1s infinite;
+  transform: rotate(90deg);
+  position: absolute;
+}
+@keyframes bounce {
+  0%{
+    top: 5px;
+  }
+  50%{
+    top: 25px;
+  }
+  100%{
+    top: 5px;
+  }
+}
+.question .img{
+    width: 50%;
+    display: inline-block;
+    background-attachment: fixed;
+    background-size: 52%;
+    background-position: bottom left;
+    margin: 0px 0px -34px;
+    height: 950px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    transform: translate( 0, 0);
+}
+.question div{
+    width: 49.5%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    top: 50%;
+    right: 50%;
+    transform: translate( 0, -80%);
+}
+.question h3{
+    font-size: 50px;
+    display: inline-block;
+}
+.question button{
+    font-size: 30px;
+    display: block;
+    padding: 10px;
+    background: none;
+    border: solid 2px #777;
+    margin: 10px 3px;
+    color: #333;
+    width: 100%;
+}
+.question a{
+    font-size: 25px;
+    display: block;
+    padding: 10px 15px;
+    border: solid 2px #333;
+    margin: 20px 3px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+#end #copyright{
+    font-size: 12px;
+    display: inline-block;
+    width: 50%;
+}
+#end h3{
+    font-size: 90px;
+}
