@@ -84,11 +84,11 @@ header a::after{
     transform: translate( 0, -80%);
 }
 .question h3{
-    font-size: 50px;
+    font-size: 40px;
     display: inline-block;
 }
 .question button{
-    font-size: 30px;
+    font-size: 25px;
     display: block;
     padding: 10px;
     background: none;
@@ -98,7 +98,7 @@ header a::after{
     width: 100%;
 }
 .question a{
-    font-size: 25px;
+    font-size: 20px;
     display: block;
     padding: 10px 15px;
     border: solid 2px #333;
